@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _checkBox = _interopRequireDefault(require("./checkBox"));
+var _checkbox = _interopRequireDefault(require("./checkbox"));
 
 var _radioButton = _interopRequireDefault(require("./radioButton"));
 
@@ -24,7 +24,7 @@ var _decimal = _interopRequireDefault(require("./decimal"));
 var _multiSelect = _interopRequireDefault(require("./multiSelect"));
 
 var Input = _text.default;
-Input.CheckBox = _checkBox.default;
+Input.CheckBox = _checkbox.default;
 Input.RadioButton = _radioButton.default;
 Input.Select = _select.default;
 Input.MultiSelect = _multiSelect.default;
