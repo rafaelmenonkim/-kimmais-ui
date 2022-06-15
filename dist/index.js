@@ -16,7 +16,7 @@ Object.defineProperty(exports, "ActionMenu", {
 Object.defineProperty(exports, "Backdrop", {
   enumerable: true,
   get: function get() {
-    return _index.default;
+    return _backdrop.default;
   }
 });
 Object.defineProperty(exports, "Background", {
@@ -34,7 +34,7 @@ Object.defineProperty(exports, "Breadcrumb", {
 Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
-    return _index2.default;
+    return _button.default;
   }
 });
 Object.defineProperty(exports, "Content", {
@@ -94,7 +94,7 @@ Object.defineProperty(exports, "Icon", {
 Object.defineProperty(exports, "Input", {
   enumerable: true,
   get: function get() {
-    return _index3.default;
+    return _input.default;
   }
 });
 Object.defineProperty(exports, "Line", {
@@ -226,7 +226,7 @@ Object.defineProperty(exports, "Tabs", {
 Object.defineProperty(exports, "Tag", {
   enumerable: true,
   get: function get() {
-    return _indes.default;
+    return _tag.default;
   }
 });
 Object.defineProperty(exports, "TemporaryDisabled", {
@@ -256,13 +256,13 @@ Object.defineProperty(exports, "TransferList", {
 
 var _actionMenu = _interopRequireDefault(require("./actionMenu"));
 
-var _index = _interopRequireDefault(require("./backdrop/index"));
+var _backdrop = _interopRequireDefault(require("./backdrop"));
 
 var _background = _interopRequireDefault(require("./background"));
 
 var _breadcrumb = _interopRequireDefault(require("./breadcrumb"));
 
-var _index2 = _interopRequireDefault(require("./button/index"));
+var _button = _interopRequireDefault(require("./button"));
 
 var _content = _interopRequireDefault(require("./content"));
 
@@ -282,7 +282,7 @@ var _horizontalScrollWrapper = _interopRequireDefault(require("./horizontalScrol
 
 var _icon = _interopRequireDefault(require("./icon"));
 
-var _index3 = _interopRequireDefault(require("./input/index"));
+var _input = _interopRequireDefault(require("./input"));
 
 var _line = _interopRequireDefault(require("./line"));
 
@@ -320,7 +320,7 @@ var _tabs = _interopRequireWildcard(require("./tabs"));
 
 var _temporaryDisabled = _interopRequireDefault(require("./temporaryDisabled"));
 
-var _indes = _interopRequireDefault(require("./tag/indes"));
+var _tag = _interopRequireDefault(require("./tag"));
 
 var _title = _interopRequireDefault(require("./title"));
 
