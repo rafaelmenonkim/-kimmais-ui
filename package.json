@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "author": "Rafael Menon <rafael.menon@kimmais.com.br>",
   "files": [
     "dist",
     "README.md"
