@@ -1,4 +1,4 @@
-import CheckBox from "./checkBox";
+import CheckBox from "./checkbox";
 import RadioButton from "./radioButton";
 import Text from "./text";
 import Select from "./select";
