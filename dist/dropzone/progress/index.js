@@ -9,19 +9,19 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _style = require("./style");
+var _styles = require("./styles");
 
 var Progress = function Progress(_ref) {
   var uploadingFile = _ref.uploadingFile,
       onCancel = _ref.onCancel;
-  return /*#__PURE__*/_react.default.createElement(_style.Container, null, /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_styles.Container, null, /*#__PURE__*/_react.default.createElement("div", {
     style: {
       width: "88%",
       position: "relative"
     }
-  }, /*#__PURE__*/_react.default.createElement(_style.FileName, null, uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name), /*#__PURE__*/_react.default.createElement(_style.FileSize, null, uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.readeableSize), /*#__PURE__*/_react.default.createElement(_style.UploadPercentage, null, uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.percentage, "%"), /*#__PURE__*/_react.default.createElement(_style.ProgressBar, null, /*#__PURE__*/_react.default.createElement(_style.FilledPercentage, {
+  }, /*#__PURE__*/_react.default.createElement(_styles.FileName, null, uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name), /*#__PURE__*/_react.default.createElement(_styles.FileSize, null, uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.readeableSize), /*#__PURE__*/_react.default.createElement(_styles.UploadPercentage, null, uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.percentage, "%"), /*#__PURE__*/_react.default.createElement(_styles.ProgressBar, null, /*#__PURE__*/_react.default.createElement(_styles.FilledPercentage, {
     sended: uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.percentage
-  }))), /*#__PURE__*/_react.default.createElement(_style.CloseIcon, {
+  }))), /*#__PURE__*/_react.default.createElement(_styles.CloseIcon, {
     name: "error",
     onClick: function onClick(e) {
       e.stopPropagation();

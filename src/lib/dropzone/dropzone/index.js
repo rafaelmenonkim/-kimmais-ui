@@ -7,7 +7,7 @@ import {
   MainText,
   SubText,
   UploadIcon,
-} from "./style";
+} from "./styles";
 
 const Dropzone = ({ formatsLabel, maxSize, onDrop, setError, ...props }) => {
   const errorMessages = {

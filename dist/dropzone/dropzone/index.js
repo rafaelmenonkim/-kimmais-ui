@@ -15,7 +15,7 @@ var _reactDropzone = _interopRequireDefault(require("react-dropzone"));
 
 var _filesize = _interopRequireDefault(require("filesize"));
 
-var _style = require("./style");
+var _styles = require("./styles");
 
 var _excluded = ["formatsLabel", "maxSize", "onDrop", "setError"];
 
@@ -38,9 +38,9 @@ var Dropzone = function Dropzone(_ref) {
   }, props), function (_ref2) {
     var getRootProps = _ref2.getRootProps,
         getInputProps = _ref2.getInputProps;
-    return /*#__PURE__*/_react.default.createElement(_style.DropContainer, getRootProps(), /*#__PURE__*/_react.default.createElement(_style.UploadIcon, {
+    return /*#__PURE__*/_react.default.createElement(_styles.DropContainer, getRootProps(), /*#__PURE__*/_react.default.createElement(_styles.UploadIcon, {
       name: "upload"
-    }), /*#__PURE__*/_react.default.createElement(_style.MainText, null, "Arraste um arquivo ou ", /*#__PURE__*/_react.default.createElement(_style.TextDecoration, null, "busque aqui"), "."), /*#__PURE__*/_react.default.createElement(_style.SubText, null, "Formatos suportados: ", formatsLabel), /*#__PURE__*/_react.default.createElement("input", getInputProps()));
+    }), /*#__PURE__*/_react.default.createElement(_styles.MainText, null, "Arraste um arquivo ou ", /*#__PURE__*/_react.default.createElement(_styles.TextDecoration, null, "busque aqui"), "."), /*#__PURE__*/_react.default.createElement(_styles.SubText, null, "Formatos suportados: ", formatsLabel), /*#__PURE__*/_react.default.createElement("input", getInputProps()));
   });
 };
 

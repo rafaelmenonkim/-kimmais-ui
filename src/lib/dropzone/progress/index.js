@@ -7,7 +7,7 @@ import {
   FilledPercentage,
   ProgressBar,
   UploadPercentage,
-} from "./style";
+} from "./styles";
 
 const Progress = ({ uploadingFile, onCancel }) => {
   return (
