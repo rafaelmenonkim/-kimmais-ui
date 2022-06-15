@@ -13,7 +13,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDropzone = _interopRequireDefault(require("react-dropzone"));
 
-var _components = require("@/components");
+var _icon = _interopRequireDefault(require("../../icon"));
 
 var _progress = _interopRequireDefault(require("../progress"));
 
@@ -21,7 +21,7 @@ var _functionUtils = require("../../utils/functionUtils");
 
 var _filesize = _interopRequireDefault(require("filesize"));
 
-var _style = require("./style");
+var _styles = require("./styles");
 
 var _excluded = ["cancelUpload", "children", "error", "exclude", "formatsLabel", "maxSize", "onDrop", "setError", "uploadingFile"];
 
@@ -49,17 +49,17 @@ var Dropline = function Dropline(_ref) {
   }, props), function (_ref2) {
     var getRootProps = _ref2.getRootProps,
         getInputProps = _ref2.getInputProps;
-    return /*#__PURE__*/_react.default.createElement(_style.DropContainer, Object.assign({
+    return /*#__PURE__*/_react.default.createElement(_styles.DropContainer, Object.assign({
       fileName: uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name,
       error: error
     }, getRootProps()), !(uploadingFile !== null && uploadingFile !== void 0 && uploadingFile.uploading) ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
       style: {
         display: "flex"
       }
-    }, /*#__PURE__*/_react.default.createElement(_style.Document, null, /*#__PURE__*/_react.default.createElement(_components.Icon, {
+    }, /*#__PURE__*/_react.default.createElement(_styles.Document, null, /*#__PURE__*/_react.default.createElement(_icon.default, {
       fileName: uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name,
       name: "document"
-    })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_style.FileTitle, null, children), uploadingFile !== null && uploadingFile !== void 0 && uploadingFile.name ? /*#__PURE__*/_react.default.createElement(_style.FileName, null, /*#__PURE__*/_react.default.createElement("strong", null, (0, _functionUtils.reduceBigTextLines)(uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name, 25)), " ", error ? /*#__PURE__*/_react.default.createElement(_style.Error, null, "Houve uma falha no envio") : "adicionado") : /*#__PURE__*/_react.default.createElement(_style.SubText, null, "Formatos suportados: ", formatsLabel))), (uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name) && /*#__PURE__*/_react.default.createElement(_components.Icon.ActionIcon, {
+    })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_styles.FileTitle, null, children), uploadingFile !== null && uploadingFile !== void 0 && uploadingFile.name ? /*#__PURE__*/_react.default.createElement(_styles.FileName, null, /*#__PURE__*/_react.default.createElement("strong", null, (0, _functionUtils.reduceBigTextLines)(uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name, 25)), " ", error ? /*#__PURE__*/_react.default.createElement(_styles.Error, null, "Houve uma falha no envio") : "adicionado") : /*#__PURE__*/_react.default.createElement(_styles.SubText, null, "Formatos suportados: ", formatsLabel))), (uploadingFile === null || uploadingFile === void 0 ? void 0 : uploadingFile.name) && /*#__PURE__*/_react.default.createElement(_icon.default.ActionIcon, {
       name: "trash",
       hover: "Excluir",
       onClick: function onClick(e) {

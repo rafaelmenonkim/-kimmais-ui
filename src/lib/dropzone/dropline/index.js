@@ -1,6 +1,6 @@
 import React from "react";
 import RDropzone from "react-dropzone";
-import { Icon } from "@/components";
+import Icon from "../../icon";
 import Progress from "../progress";
 import { reduceBigTextLines } from "../../utils/functionUtils";
 import fileSize from "filesize";
@@ -11,7 +11,7 @@ import {
   DropContainer,
   SubText,
   Document,
-} from "./style";
+} from "./styles";
 
 const Dropline = ({
   cancelUpload,
