@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import _ from "lodash";
 import Input from "..";
-import useOnClickOutside from "@/hooks/useOnClickOutside";
 import Spinner from "@/components/spinner";
 import { RiCloseFill, RiArrowDownSLine } from "react-icons/ri";
 import {
@@ -28,6 +27,7 @@ const MultiSelect = ({
   onChange = () => null,
   onInputChange = () => null,
   inputRef,
+  useOnClickOutside,
 }) => {
   const positionRef = useRef(null);
   const [isListOpen, setIsListOpen] = useState(false);

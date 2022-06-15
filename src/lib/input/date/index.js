@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { Input, DateContainer, Calendar, CalendarIcon } from "./styles";
-import useOnClickOutside from "@/hooks/useOnClickOutside";
 import { isValidDate } from "../../utils/functionUtils";
 import "./calendar.css";
 
@@ -15,6 +14,7 @@ const InputDate = ({
   maxDate,
   ref,
   placeholder,
+  useOnClickOutside,
   ...props
 }) => {
   const [isCalendarVisible, setIsCalendarVisible] = useState(false);

@@ -36,6 +36,7 @@ import Title from "./title";
 import TextDecoration from "./textDecoration";
 import TransferList from "./transferList";
 import { Tab, TabList, TabPanel, Tabs } from "./tabs";
+import "./index.css";
 
 export {
   ActionMenu,

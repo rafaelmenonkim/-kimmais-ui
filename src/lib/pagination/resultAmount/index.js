@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import useOnClickOutside from "../../../hooks/useOnClickOutside";
 import {
   Arrow,
   Container,
@@ -8,7 +7,7 @@ import {
   SelectPositionHolder,
 } from "./styles";
 
-const ResultAmount = ({ setPageSize, ...props }) => {
+const ResultAmount = ({ setPageSize, useOnClickOutside, ...props }) => {
   const [isOpened, setIsOpened] = useState(false);
   const [options, setOptions] = useState([10, 15, 20, 25, 50, 100]);
   const clickOut = useOnClickOutside(() => {

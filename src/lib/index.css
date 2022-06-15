@@ -1,0 +1,108 @@
+:root {
+    --color-primary-01: #5e39ca;
+    --color-primary-02: #9a81cb;
+    --color-primary-03: #707070;
+    --color-primary-04: #232324;
+    --color-primary-05: #ffffff;
+  
+    --color-secundary-01: #fdaf70;
+    --color-secundary-02: #f8f8f8;
+    --color-secundary-03: #d5c8f1;
+    --color-secundary-04: #d7d7d7;
+    --color-secundary-05: #e8e7e7;
+    --color-secundary-06: #9e9e9e;
+    --color-secundary-07: #18a4e1;
+    --color-secundary-08: #2c2d5c;
+    --color-secundary-09: #5355a8;
+  
+    --color-status-01: #00e077;
+    --color-status-02: #e02e00;
+    --color-status-03: #fefe2b;
+    --color-status-04: #00a3e0;
+    --color-status-05: #f76c39;
+    --color-status-06: #aeaaaa;
+  
+    --color-message-01: #4cebf9;
+    --color-message-02: #fecd2b;
+    --color-message-03: #e02e00;
+  
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --font-gradient: linear-gradient(
+      90deg,
+      rgba(96, 117, 215, 1) 19%,
+      rgba(126, 207, 213, 1) 41%,
+      rgba(112, 216, 185, 1) 54%,
+      rgba(71, 240, 136, 1) 72%
+    );
+    --gradient-01: linear-gradient(
+      90deg,
+      rgba(96, 117, 215, 1) 19%,
+      rgba(126, 207, 213, 1) 41%,
+      rgba(112, 216, 185, 1) 54%,
+      rgba(71, 240, 136, 1) 72%
+    );
+    --gradient-02: linear-gradient(
+      90deg,
+      rgba(109, 76, 252, 1) 0%,
+      rgba(4, 249, 141, 1) 100%,
+      rgba(9, 9, 121, 1) 100%
+    );
+    --menu-height: 145px;
+    --footer-height: 157px;
+    --content-width-limit: 1682px;
+    --box-shadow-01: 0px 3px 6px #00000029;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #d3dde6;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary-03) var(--color-secundary-04);
+  }
+  
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--color-secundary-04);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-03);
+  }
+  
+  .react-responsive-modal-modal {
+    border-radius: 10px;
+  }
+  
+  .react-switch-handle {
+    height: 18px;
+    width: 17px;
+    /* margin-top: 4px; */
+  }
+  

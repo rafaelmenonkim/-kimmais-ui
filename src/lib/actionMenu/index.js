@@ -1,8 +1,12 @@
 import React, { useState, useRef } from "react";
 import { MenuContainer, Dot, FloatingList } from "./styles";
-import useOnClickOutside from "../../hooks/useOnClickOutside";
 
-const ActionMenu = ({ activePosition, children, ...props }) => {
+const ActionMenu = ({
+  activePosition,
+  children,
+  useOnClickOutside,
+  ...props
+}) => {
   const [isListVisible, setIsListVisible] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const list = useRef(null);
