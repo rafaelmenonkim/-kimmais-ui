@@ -21,8 +21,6 @@ var _lodash = _interopRequireDefault(require("lodash"));
 
 var _2 = _interopRequireDefault(require(".."));
 
-var _useOnClickOutside = _interopRequireDefault(require("@/hooks/useOnClickOutside"));
-
 var _spinner = _interopRequireDefault(require("@/components/spinner"));
 
 var _ri = require("react-icons/ri");
@@ -60,7 +58,8 @@ var MultiSelect = function MultiSelect(_ref) {
       onInputChange = _ref$onInputChange === void 0 ? function () {
     return null;
   } : _ref$onInputChange,
-      inputRef = _ref.inputRef;
+      inputRef = _ref.inputRef,
+      useOnClickOutside = _ref.useOnClickOutside;
   var positionRef = (0, _react.useRef)(null);
 
   var _useState = (0, _react.useState)(false),
@@ -88,7 +87,7 @@ var MultiSelect = function MultiSelect(_ref) {
       isFocused = _useState10[0],
       setIsFocused = _useState10[1];
 
-  var clickOutside = (0, _useOnClickOutside.default)(function (e) {
+  var clickOutside = useOnClickOutside(function (e) {
     if (!positionRef.current.contains(e.target)) {
       setIsListOpen(false);
       setFilter("");

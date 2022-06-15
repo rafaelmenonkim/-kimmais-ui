@@ -327,3 +327,5 @@ var _title = _interopRequireDefault(require("./title"));
 var _textDecoration = _interopRequireDefault(require("./textDecoration"));
 
 var _transferList = _interopRequireDefault(require("./transferList"));
+
+require("./index.css");

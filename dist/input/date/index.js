@@ -19,13 +19,11 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _styles = require("./styles");
 
-var _useOnClickOutside = _interopRequireDefault(require("@/hooks/useOnClickOutside"));
-
 var _functionUtils = require("../../utils/functionUtils");
 
 require("./calendar.css");
 
-var _excluded = ["value", "onChange", "required", "minDate", "maxDate", "ref", "placeholder"];
+var _excluded = ["value", "onChange", "required", "minDate", "maxDate", "ref", "placeholder", "useOnClickOutside"];
 var LOCALE = "pt-br";
 
 var InputDate = function InputDate(_ref) {
@@ -36,6 +34,7 @@ var InputDate = function InputDate(_ref) {
       maxDate = _ref.maxDate,
       ref = _ref.ref,
       placeholder = _ref.placeholder,
+      useOnClickOutside = _ref.useOnClickOutside,
       props = (0, _objectWithoutProperties2.default)(_ref, _excluded);
 
   var _useState = (0, _react.useState)(false),
@@ -49,7 +48,7 @@ var InputDate = function InputDate(_ref) {
       setPosition = _useState4[1];
 
   var calendarRef = (0, _react.useRef)();
-  var clickOut = (0, _useOnClickOutside.default)(function (e) {
+  var clickOut = useOnClickOutside(function (e) {
     !calendarRef.current.contains(e.target) && setIsCalendarVisible(false);
   });
   value = typeof value === "string" ? new Date(value) : value;

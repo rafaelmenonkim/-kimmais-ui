@@ -17,13 +17,12 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _styles = require("./styles");
 
-var _useOnClickOutside = _interopRequireDefault(require("../../hooks/useOnClickOutside"));
-
-var _excluded = ["activePosition", "children"];
+var _excluded = ["activePosition", "children", "useOnClickOutside"];
 
 var ActionMenu = function ActionMenu(_ref) {
   var activePosition = _ref.activePosition,
       children = _ref.children,
+      useOnClickOutside = _ref.useOnClickOutside,
       props = (0, _objectWithoutProperties2.default)(_ref, _excluded);
 
   var _useState = (0, _react.useState)(false),
@@ -40,7 +39,7 @@ var ActionMenu = function ActionMenu(_ref) {
       setPosition = _useState4[1];
 
   var list = (0, _react.useRef)(null);
-  var clickOutside = (0, _useOnClickOutside.default)(function () {
+  var clickOutside = useOnClickOutside(function () {
     setIsListVisible(false);
   });
 

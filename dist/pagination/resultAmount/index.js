@@ -17,14 +17,13 @@ var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/h
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _useOnClickOutside = _interopRequireDefault(require("../../../hooks/useOnClickOutside"));
-
 var _styles = require("./styles");
 
-var _excluded = ["setPageSize"];
+var _excluded = ["setPageSize", "useOnClickOutside"];
 
 var ResultAmount = function ResultAmount(_ref) {
   var setPageSize = _ref.setPageSize,
+      useOnClickOutside = _ref.useOnClickOutside,
       props = (0, _objectWithoutProperties2.default)(_ref, _excluded);
 
   var _useState = (0, _react.useState)(false),
@@ -37,7 +36,7 @@ var ResultAmount = function ResultAmount(_ref) {
       options = _useState4[0],
       setOptions = _useState4[1];
 
-  var clickOut = (0, _useOnClickOutside.default)(function () {
+  var clickOut = useOnClickOutside(function () {
     setIsOpened(false);
   });
 
