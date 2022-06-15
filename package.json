@@ -1,6 +1,6 @@
 {
   "name": "kimmaisui",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "author": "Rafael Menon <rafael.menon@kimmais.com.br>",
