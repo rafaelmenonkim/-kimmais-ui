@@ -9,7 +9,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _constants = require("../../utils/constants");
+var _constants = require("../utils/constants");
 
 var _styles = require("./styles");
 

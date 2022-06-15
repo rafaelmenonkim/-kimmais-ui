@@ -1,5 +1,5 @@
 import React from "react";
-import { reduceBigTextLines } from "../../../../utils/functionUtils";
+import { reduceBigTextLines } from "../../../utils/functionUtils";
 import { Icon, Table, Input } from "../../../index";
 import CheckBox from "../../../input/checkbox";
 import {

@@ -2,7 +2,7 @@ import React from "react";
 import RDropzone from "react-dropzone";
 import { Icon } from "@/components";
 import Progress from "../progress";
-import { reduceBigTextLines } from "../../../utils/functionUtils";
+import { reduceBigTextLines } from "../../utils/functionUtils";
 import fileSize from "filesize";
 import {
   Error,

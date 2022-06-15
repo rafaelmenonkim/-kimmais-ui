@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, Input } from "../../../index";
 import { Header } from "./styles";
-import { reduceBigTextLines } from "../../../../utils/functionUtils";
+import { reduceBigTextLines } from "../../../utils/functionUtils";
 
 const ListTable = ({
   allClick,

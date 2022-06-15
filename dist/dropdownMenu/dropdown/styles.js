@@ -11,7 +11,7 @@ exports.DropdownList = void 0;
 
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/taggedTemplateLiteral"));
 
-var _constants = require("../../../utils/constants");
+var _constants = require("../../utils/constants");
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 

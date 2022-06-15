@@ -1,5 +1,5 @@
 import { popNotification } from "@/store/modules/notification/actions";
-import { TEN_SECONDS } from "../../utils/constants";
+import { TEN_SECONDS } from "../utils/constants";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import NotificationMessage from "../notificationMessage";

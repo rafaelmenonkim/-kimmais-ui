@@ -1,4 +1,4 @@
-import { BREAK_POINTS } from "../../../utils/constants";
+import { BREAK_POINTS } from "../../utils/constants";
 import styled, { css } from "styled-components";
 
 export const DropdownList = styled.div`

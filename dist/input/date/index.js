@@ -21,7 +21,7 @@ var _styles = require("./styles");
 
 var _useOnClickOutside = _interopRequireDefault(require("@/hooks/useOnClickOutside"));
 
-var _functionUtils = require("../../../utils/functionUtils");
+var _functionUtils = require("../../utils/functionUtils");
 
 require("./calendar.css");
 

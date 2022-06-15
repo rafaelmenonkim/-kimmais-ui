@@ -9,7 +9,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _functionUtils = require("../../../../utils/functionUtils");
+var _functionUtils = require("../../../utils/functionUtils");
 
 var _index = require("../../../index");
 

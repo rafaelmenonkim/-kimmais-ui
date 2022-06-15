@@ -17,7 +17,7 @@ var _components = require("@/components");
 
 var _progress = _interopRequireDefault(require("../progress"));
 
-var _functionUtils = require("../../../utils/functionUtils");
+var _functionUtils = require("../../utils/functionUtils");
 
 var _filesize = _interopRequireDefault(require("filesize"));
 

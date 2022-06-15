@@ -11,7 +11,7 @@ exports.default = void 0;
 
 var _actions = require("@/store/modules/notification/actions");
 
-var _constants = require("../../utils/constants");
+var _constants = require("../utils/constants");
 
 var _react = _interopRequireWildcard(require("react"));
 

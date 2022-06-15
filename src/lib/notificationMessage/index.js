@@ -1,5 +1,5 @@
 import React from "react";
-import { NOTIFICATION_TYPE } from "../../utils/constants";
+import { NOTIFICATION_TYPE } from "../utils/constants";
 import {
   CloseIcon,
   Message,

@@ -13,7 +13,7 @@ var _index = require("../../../index");
 
 var _styles = require("./styles");
 
-var _functionUtils = require("../../../../utils/functionUtils");
+var _functionUtils = require("../../../utils/functionUtils");
 
 var ListTable = function ListTable(_ref) {
   var allClick = _ref.allClick,

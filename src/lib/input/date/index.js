@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { Input, DateContainer, Calendar, CalendarIcon } from "./styles";
 import useOnClickOutside from "@/hooks/useOnClickOutside";
-import { isValidDate } from "../../../utils/functionUtils";
+import { isValidDate } from "../../utils/functionUtils";
 import "./calendar.css";
 
 const LOCALE = "pt-br";
